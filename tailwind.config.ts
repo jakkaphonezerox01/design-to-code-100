@@ -61,7 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				genshin: {
+					blue: 'hsl(var(--genshin-blue))',
+					purple: 'hsl(var(--genshin-purple))',
+					'dark-blue': 'hsl(var(--genshin-dark-blue))',
+					'light-blue': 'hsl(var(--genshin-light-blue))',
+					'bg-light': 'hsl(var(--genshin-bg-light))',
+					'text-dark': 'hsl(var(--genshin-text-dark))',
+					'text-light': 'hsl(var(--genshin-text-light))'
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-button': 'var(--gradient-button)',
+				'gradient-search': 'var(--gradient-search)'
+			},
+			boxShadow: {
+				'genshin-card': 'var(--shadow-card)',
+				'genshin-hero': 'var(--shadow-hero)',
+				'genshin-button': 'var(--shadow-button)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

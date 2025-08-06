@@ -18,6 +18,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        genshin: "bg-gradient-button text-white hover:shadow-genshin-button transition-all duration-300",
+        hero: "bg-white/20 text-white border border-white/20 hover:bg-white/30 backdrop-blur-sm transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
