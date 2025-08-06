@@ -1,9 +1,11 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useToast } from "@/hooks/use-toast";
 import laylaCharacter from "@/assets/layla-character.png";
 
 const HeroSection = () => {
+  const { toast } = useToast();
   return (
     <section className="w-full px-6 py-8">
       <div className="max-w-7xl mx-auto">
@@ -15,6 +17,7 @@ const HeroSection = () => {
             variant="ghost" 
             size="icon"
             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm"
+            onClick={() => toast({ title: "Previous", description: "Showing previous character..." })}
           >
             <ChevronLeft className="h-6 w-6 text-white" />
           </Button>
@@ -23,6 +26,7 @@ const HeroSection = () => {
             variant="ghost" 
             size="icon"
             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm"
+            onClick={() => toast({ title: "Next", description: "Showing next character..." })}
           >
             <ChevronRight className="h-6 w-6 text-white" />
           </Button>
@@ -46,7 +50,11 @@ const HeroSection = () => {
                 She is a student in the Rtawahist Darshan, specializing in Theoretical Astrology.
               </p>
               
-              <Button variant="hero" className="mt-8">
+              <Button 
+                variant="hero" 
+                className="mt-8"
+                onClick={() => toast({ title: "Read More", description: "Opening detailed character information..." })}
+              >
                 Read More
               </Button>
 
